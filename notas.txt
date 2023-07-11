@@ -1,0 +1,12 @@
+rails g scaffold pet name race age:integer gender
+
+rails g model match user:references pet:references message
+
+rails g migration AddUsersToPets user:references
+
+rails g model image url:text context imageable:references{polymorphic}
+    Puede ser la llave foranea que viene de usuario o de mascota heheheheh
+
+HACER DE INMEDIATO LAS REFERENCIAS EN LOS MODELOS. NUNCA EN LAS MIGRACIONES
+
+Agregar las relaciones a los modelos ahorita
