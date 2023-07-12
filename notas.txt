@@ -10,3 +10,11 @@ rails g model image url:text context imageable:references{polymorphic}
 HACER DE INMEDIATO LAS REFERENCIAS EN LOS MODELOS. NUNCA EN LAS MIGRACIONES
 
 Agregar las relaciones a los modelos ahorita
+
+---------
+
+Modificamos la vista del usuario
+
+rails g devise:controllers users
+
+AVISO. LAS IMAGENES NO SE GUARDAN JUNTO CON EL USUARIO ALGO PASA
