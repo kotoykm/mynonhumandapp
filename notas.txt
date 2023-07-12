@@ -18,3 +18,8 @@ Modificamos la vista del usuario
 rails g devise:controllers users
 
 AVISO. LAS IMAGENES NO SE GUARDAN JUNTO CON EL USUARIO ALGO PASA
+
+
+---------------
+
+rails active_storage:install

@@ -16,3 +16,8 @@ Image.create(url: "https://www.ultratc.com/web/image/product.template/59156/imag
 #Añadir dueño con variable
 owner1 = User.find(1)
 Image.create(url: "https://www.1999.co.jp/itbig52/10521575.jpg", context: "buu buu", imageable: owner1)
+
+
+##############################################################
+
+Image.create(url: "https://i.pinimg.com/564x/46/e5/31/46e531fa91f497f4b7e894b0b16e02f9.jpg", context: "ganru", imageable: User.find(3))

@@ -23,6 +23,8 @@ class PetsController < ApplicationController
   def create
     @pet = Pet.new(pet_params)
 
+    @pet.user_id = current_user.id
+
     respond_to do |format|
       if @pet.save
         format.html { redirect_to pet_url(@pet), notice: "Pet was successfully created." }
@@ -65,6 +67,6 @@ class PetsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def pet_params
-      params.require(:pet).permit(:name, :race, :age, :gender)
+      params.require(:pet).permit(:name, :race, :age, :gender,:user_id, images: [] ) #user_id puesto por el profesor
     end
 end
