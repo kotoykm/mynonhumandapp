@@ -1,6 +1,9 @@
 <div id="<%= dom_id pet %>">
-  <h2>Owner</h2>
-  <%= image_tag pet.user.images[0].url, class: "col-2" %> <!--Para poner la foto de perfil primera-->
+  
+  <h2>Mascota de:</h2>
+  
+  <%= image_tag pet.user.images[0].url, class: "col-1 myimg rounded-circle" %> <!--Para poner la foto de perfil primera-->
+  <span class="display-4 mylinks ms-4"><%= pet.user.name%></span>
   <p>
     <strong>Name:</strong>
     <%= pet.name %>

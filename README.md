@@ -1,24 +1,10 @@
-# README
+# El bucket para este proyecto fue eliminado. La app está inoperativa.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**En caso de querer reactivarlo utilizar el contenido de:**
 
-Things you may want to cover:
+    amazon-credentials.txt
+    /config/application.yml
+    
+Eso es todo. Los buckets son caros 💸💸 así que se estarán eliminado de uno en uno.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## SOLO LA APP MAS RECIENTE TENDRÁ BUCKET DISPONIBLE
