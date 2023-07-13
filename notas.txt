@@ -23,3 +23,11 @@ AVISO. LAS IMAGENES NO SE GUARDAN JUNTO CON EL USUARIO ALGO PASA
 ---------------
 
 rails active_storage:install
+
+
+
+Pasos guiados
+1. bundle add figaro
+2. bundle exec figaro install (crea el app.yml)
+
+3. bundle add aws-sdk-s3

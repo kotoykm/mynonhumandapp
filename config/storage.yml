@@ -7,12 +7,13 @@ local:
   root: <%= Rails.root.join("storage") %>
 
 # Use bin/rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
-# amazon:
-#   service: S3
-#   access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>
-#   secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>
-#   region: us-east-1
-#   bucket: your_own_bucket-<%= Rails.env %>
+#Descomentado para usar amazon en lugar de local
+amazon:
+  service: S3
+  access_key_id: <%= ENV['aws_access_key_id'] %>
+  secret_access_key: <%= ENV['aws_secret_access_key'] %>
+  region: us-east-1
+  bucket: <%= ENV['bucket_name'] %>  #Se puede proteger por variable de entorno
 
 # Remember not to checkin your GCS keyfile to a repository
 # google:
@@ -28,7 +29,7 @@ local:
 #   storage_access_key: <%= Rails.application.credentials.dig(:azure_storage, :storage_access_key) %>
 #   container: your_container_name-<%= Rails.env %>
 
-# mirror:
+# mirror: #Si no funciona un bucket que se vaya a otro
 #   service: Mirror
 #   primary: local
 #   mirrors: [ amazon, google, microsoft ]
